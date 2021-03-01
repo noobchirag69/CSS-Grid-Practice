@@ -1,3 +1,7 @@
+body {
+    background-color: black;
+}
+
 .wrapper > div {
     background-color: #eee;
     padding: 16px;
@@ -10,7 +14,7 @@
 .wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 3px;
+    grid-gap: 4px;
 }
 
 .box > div {
@@ -23,25 +27,25 @@
 }
 
 .box {
-    margin-top: 3px;
+    margin-top: 4px;
     display: grid;
-    grid-template-columns: 30% 70%;
-    grid-gap: 3px;
+    grid-template-columns: 0.5fr 2.5fr;
+    grid-gap: 4px;
     grid-auto-rows: auto;
 }
 
 .nested {
-    margin-top: 3px;
+    margin-top: 4px;
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
-    grid-gap: 3px;
+    grid-gap: 4px;
     text-align: center;
     
 }
 
 .nested > div {
     background-color: #eee;
-    padding: 3px;
+    padding: 4px;
 }
 
 .nested > div:nth-child(odd) {
@@ -60,7 +64,7 @@
 .sub-wrapper {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 3px;
+    grid-gap: 4px;
 }
 
 .wrapper-stretch {
@@ -70,7 +74,7 @@
 .right-wrapper {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    grid-gap: 3px;
+    grid-gap: 4px;
 }
 
 .right-wrapper > div:nth-child(even) {

@@ -1,0 +1,87 @@
+.wrapper > div {
+    background-color: #eee;
+    padding: 16px;
+}
+
+.wrapper > div:nth-child(odd) {
+    background-color: #ddd;
+}
+
+.wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+}
+
+.box > div {
+    background-color: #eee;
+    padding: 16px;
+}
+
+.box > div:nth-child(even) {
+    background-color: #ddd;
+}
+
+.box {
+    margin-top: 3px;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-gap: 3px;
+    grid-auto-rows: auto;
+}
+
+.nested {
+    margin-top: 3px;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-gap: 3px;
+    text-align: center;
+    
+}
+
+.nested > div {
+    background-color: #eee;
+    padding: 3px;
+}
+
+.nested > div:nth-child(odd) {
+    background-color: #ddd;
+}
+
+.sub-wrapper > div {
+    background-color: #eee;
+    padding: 16px;
+}
+
+.sub-wrapper > div:nth-child(odd) {
+    background-color: #ddd;
+}
+
+.sub-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 3px;
+}
+
+.wrapper-stretch {
+    grid-column: 1/4;
+}
+
+.right-wrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 3px;
+}
+
+.right-wrapper > div:nth-child(even) {
+    background-color: #ddd;
+}
+
+.right-wrapper > div {
+    background-color: #eee;
+    padding: 16px;
+}
+
+.right-wrapper-30 {
+    grid-column: 1/3;
+}
